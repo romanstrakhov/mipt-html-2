@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;  
+}
+
+/* header */
+
+header {
+  margin: 0 20px;
+  /* border-bottom: 1px solid #cccccc; */
+}
+  
+.header__logo {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-family: 'Arial Narrow', sans-serif;
+
+}
+
+/* navigation */
+
+nav {
+  margin: 1rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+  padding: 1rem;
+  font-family: sans-serif;
+
+}
+
+
+nav > ul > li {
+  display: inline-block;
+  padding-left: 1rem;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+nav a:link,
+nav a:active,
+nav a:visited {
+  text-decoration: none;
+  color:#003366;
+  border-bottom: 1px dashed #003366; 
+}
+
+nav a.active:link,
+nav a.active:active,
+nav a.active:visited {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+
+nav > ul > li:not(:last-child) {
+  padding-right: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+/* main */
+
+main {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+/* items */
+
+.item {
+  display: block;
+  width: 300px;
+  height: 550px;
+  overflow: hidden;
+  float: left;
+  margin: 0 2rem 2rem 0;
+  box-sizing: border-box;
+}
+
+.item__image {
+  vertical-align: bottom;
+  display: table-cell;
+  height: 300px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.item__image > img {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: auto;
+  transition-duration: 0.4s;  
+}
+
+.item__image > img:hover {
+  transform: scale(1.2);
+}
+
+.item__name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.item__category {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.item__rating {
+  margin-bottom: 0.5rem;
+}
+
+.item__price {
+  color: darkred;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.item__price_old {
+  color: gray;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.item__description {
+  font-size: 0.8rem;
+  height: 6.5rem;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+}
+
+/* footer  */
+
+footer {
+  clear: all;
+  background-color: #cccccc;
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.footer__logo {
+  float: left;
+  clear: left;
+  width: 50%;
+  font-size: 1.2rem;
+  color: #666666;
+  font-family: 'Arial Narrow', sans-serif;
+}
+
+.footer__copyright {
+  float: right;
+  clear: right;
+  width: 50%;
+  text-align: right;
+}
+
+/* helpers */
+
+.clearfix {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
