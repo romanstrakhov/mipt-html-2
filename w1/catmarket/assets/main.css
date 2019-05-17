@@ -30,6 +30,7 @@ nav {
 }
 
 
+
 nav > ul > li {
   display: inline-block;
   padding-left: 1rem;
@@ -58,7 +59,82 @@ nav > ul > li:not(:last-child) {
   border-right: 1px solid #ccc;
 }
 
+/* view mode switcher */
+
+#view-mode {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+#view-mode__label {
+  border-bottom: 1px dashed #003366;
+  color: #003366;
+  margin-left: 20px;
+}
+#view-mode__label:hover {
+  color: red;
+  border-bottom: 1px dashed red;
+  cursor: pointer;
+}
+
+
 /* main */
+
+#view-mode:checked ~ main {
+  margin-top: 80px;
+}
+
+#view-mode:checked ~ main .item {
+  width: 100%;
+  /* background-color: #eeeeee; */
+  height: inherit;
+}
+
+#view-mode:checked ~ main .item__image {
+  width: 30%;
+  min-width: 300px;
+  height: inherit;
+  float: left;
+  clear: both;
+}
+
+#view-mode:checked ~ main .item:hover .item__image {
+  opacity: 1;
+}
+
+#view-mode:checked ~ main .item .item__image:hover {
+  opacity: .7;
+}
+
+
+#view-mode:checked ~ main .item__image img {
+  max-width: 300px;
+  max-height: 600px;
+  margin-top: auto;
+  
+}
+
+#view-mode:checked ~ main .item__data {
+  margin: 0;
+}
+
+#view-mode:checked ~ main .item__data__brief {
+  /* float: left; */
+  display: inline-block;
+  padding-left: 20px;
+  width:30%;
+  min-width: 300px;
+}
+
+#view-mode:checked ~ main .item__description {
+  /* float: left; */
+  display: inline-block;
+  padding-left: 20px;
+  margin-top: 0;
+  width: 30%;
+  min-width: 300px;
+}
+
 
 main {
   margin: 20px;
@@ -93,8 +169,8 @@ main {
   transition-duration: 0.4s;  
 }
 
-.item__image > img:hover {
-  transform: scale(1.2);
+.item:hover .item__image {
+  opacity: .7;
 }
 
 .item__name {
@@ -106,6 +182,10 @@ main {
   width: 100%;
 }
 
+.item__name a:hover {
+  color: red;
+}
+
 .item__category {
   font-size: 0.9rem;
   color: gray;
@@ -114,7 +194,35 @@ main {
 
 .item__rating {
   margin-bottom: 0.5rem;
+  width: 100px;
+  height: 20px;
+  background-image: url('../assets/stars.png');
+  background-repeat: repeat-x;
+  
+  background-size: 20px;
 }
+
+.item__rating__mark {
+  background-position-y: -20px;
+  height: 20px;
+  width: 0;
+  background-image: url('../assets/stars.png');
+  background-repeat: repeat-x;
+  background-size: 20px;
+}
+
+.item__rating__0 { width: 0; }
+.item__rating__1 { width: 10px; }
+.item__rating__2 { width: 20px; }
+.item__rating__3 { width: 30px; }
+.item__rating__4 { width: 40px; }
+.item__rating__5 { width: 50px; }
+.item__rating__6 { width: 60px; }
+.item__rating__7 { width: 70px; }
+.item__rating__8 { width: 80px !important;  }
+.item__rating__9 { width: 90px; }
+.item__rating__10 { width: 100px; }
+
 
 .item__price {
   color: darkred;
