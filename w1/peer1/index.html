@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>эксперименты с box</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<article>
+		<h2>Добро пожаловать на сайт Мяндекс Муркета!</h2>
+		<label for="list">список</label>
+		<input type="checkbox" name="list" id="chetyre"/>
+		<br>
+<!--КОТ ПЕРВЫЙ -->		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" href = "www.google.com" src="photo_cats/1.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Барсик</a>
+				<span class="cat__category">Кот цвета шпрот</span>
+
+				<div class="rating">
+	            	<input type="radio" id="1star5" name="1rating" value="5" /><label class = "full" for="1star5" title="5 stars"></label>
+	            	<input type="radio" id="1star4half" name="1rating" value="4 and a half" /><label class="half" for="1star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="1star4" name="1rating" value="4" /><label class = "full" for="1star4" title="4 stars"></label>
+	            	<input type="radio" id="1star3half" name="1rating" value="3 and a half" /><label class="half" for="1star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="1star3" name="1rating" value="3" /><label class = "full" for="1star3" title="3 stars"></label>
+	            	<input type="radio" id="1star2half" name="1rating" value="2 and a half" /><label class="half" for="1star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="1star2" name="1rating" value="2" /><label class = "full" for="1star2" title="2 stars"></label>
+	            	<input type="radio" id="1star1half" name="1rating" value="1 and a half" /><label class="half" for="1star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="1star1" name="1rating" value="1" /><label class = "full" for="1star1" title="1 star"></label>
+	            	<input type="radio" id="1starhalf" name="1rating" value="half" /><label class="half" for="1starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$1499</span> 
+					<span class="old__price">$2000</span>
+				</span>
+			</div>
+			
+			<div class="description">Котейка хороший, ласковый. Очень любит, когда его гладят и пеленуют(см. фото). Будет отличным подарком на годовщину и не только. </div>		
+		</div>
+<!--КОТ ВТОРОЙ -->		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/2.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Мурчалка</a>
+				<span class="cat__category">АкваКот</span>
+				<div class="rating">
+	            	<input type="radio" id="2star5" name="2rating" value="5" /><label class = "full" for="2star5" title="5 stars"></label>
+	            	<input type="radio" id="2star4half" name="2rating" value="4 and a half" /><label class="half" for="2star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="2star4" name="2rating" value="4" /><label class = "full" for="2star4" title="4 stars"></label>
+	            	<input type="radio" id="2star3half" name="2rating" value="3 and a half" /><label class="half" for="2star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="2star3" name="2rating" value="3" /><label class = "full" for="2star3" title="3 stars"></label>
+	            	<input type="radio" id="2star2half" name="2rating" value="2 and a half" /><label class="half" for="2star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="2star2" name="2rating" value="2" /><label class = "full" for="2star2" title="2 stars"></label>
+	            	<input type="radio" id="2star1half" name="2rating" value="1 and a half" /><label class="half" for="2star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="2star1" name="2rating" value="1" /><label class = "full" for="2star1" title="1 star"></label>
+	            	<input type="radio" id="2starhalf" name="2rating" value="half" /><label class="half" for="2starhalf" title="0.5 stars"></label>
+	        	</div>
+
+				<span class="price">
+					<span class="today__price">$1999</span> 
+					<span class="old__price"></span>
+				</span>
+			</div>
+			<div class="description">Почти 4литра стопроцентной нежнятины! Ласков, игрив, может принимать любую форму. </div>		
+		</div>
+<!--КОТ ТРЕТИЙ -->		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/3.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Неко-сан</a>
+				<span class="cat__category">Ниндзя-кот</span>
+				<div class="rating">
+	            	<input type="radio" id="3star5" name="3rating" value="5" /><label class = "full" for="3star5" title="5 stars"></label>
+	            	<input type="radio" id="3star4half" name="3rating" value="4 and a half" /><label class="half" for="3star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="3star4" name="3rating" value="4" /><label class = "full" for="3star4" title="4 stars"></label>
+	            	<input type="radio" id="3star3half" name="3rating" value="3 and a half" /><label class="half" for="3star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="3star3" name="3rating" value="3" /><label class = "full" for="3star3" title="3 stars"></label>
+	            	<input type="radio" id="3star2half" name="3rating" value="2 and a half" /><label class="half" for="3star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="3star2" name="3rating" value="2" /><label class = "full" for="3star2" title="2 stars"></label>
+	            	<input type="radio" id="3star1half" name="3rating" value="1 and a half" /><label class="half" for="3star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="3star1" name="3rating" value="1" /><label class = "full" for="3star1" title="1 star"></label>
+	            	<input type="radio" id="3starhalf" name="3rating" value="half" /><label class="half" for="3starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$1499</span> 
+					<span class="old__price">$2000</span>
+				</span>
+			</div>
+			<div class="description">Если вы мечтаете завести кота, а родители вам не разрешают, то этот кот просто создан для вас! Он может годами скрываться от глаз, а при обнаружении использовать свое супероружие: зашкаливающую няшность.</div>		
+		</div>	
+<!--КОТ ЧЕТВЕРТЫЙ -->			
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/4.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Rindfleischetikettierungsüberwachungsaufgaben-übertragungsgesetz</a>
+				<span class="cat__category">Кот с длинным именем</span>
+				<div class="rating">
+	            	<input type="radio" id="4star5" name="4rating" value="5" /><label class = "full" for="4star5" title="5 stars"></label>
+	            	<input type="radio" id="4star4half" name="4rating" value="4 and a half" /><label class="half" for="4star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="4star4" name="4rating" value="4" /><label class = "full" for="4star4" title="4 stars"></label>
+	            	<input type="radio" id="4star3half" name="4rating" value="3 and a half" /><label class="half" for="4star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="4star3" name="4rating" value="3" /><label class = "full" for="4star3" title="3 stars"></label>
+	            	<input type="radio" id="4star2half" name="4rating" value="2 and a half" /><label class="half" for="4star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="4star2" name="4rating" value="2" /><label class = "full" for="4star2" title="2 stars"></label>
+	            	<input type="radio" id="4star1half" name="4rating" value="1 and a half" /><label class="half" for="4star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="4star1" name="4rating" value="1" /><label class = "full" for="4star1" title="1 star"></label>
+	            	<input type="radio" id="4starhalf" name="4rating" value="half" /><label class="half" for="4starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$1000</span> 
+					<span class="old__price"></span>
+				</span>
+			</div>
+			<div class="description">Этот счастливчик прибыл из солнечной Аргентины. Нуждается в доме, ласке и любви.</div>		
+		</div>
+<!--КОТ ПЯТЫЙ -->
+
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/5.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Феникс</a>
+				<span class="cat__category">Огнеупорный кот</span>
+				<div class="rating">
+	            	<input type="radio" id="5star5" name="5rating" value="5" /><label class = "full" for="5star5" title="5 stars"></label>
+	            	<input type="radio" id="5star4half" name="5rating" value="4 and a half" /><label class="half" for="5star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="5star4" name="5rating" value="4" /><label class = "full" for="5star4" title="4 stars"></label>
+	            	<input type="radio" id="5star3half" name="5rating" value="3 and a half" /><label class="half" for="5star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="5star3" name="5rating" value="3" /><label class = "full" for="5star3" title="3 stars"></label>
+	            	<input type="radio" id="5star2half" name="5rating" value="2 and a half" /><label class="half" for="5star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="5star2" name="5rating" value="2" /><label class = "full" for="5star2" title="2 stars"></label>
+	            	<input type="radio" id="5star1half" name="5rating" value="1 and a half" /><label class="half" for="5star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="5star1" name="5rating" value="1" /><label class = "full" for="5star1" title="1 star"></label>
+	            	<input type="radio" id="5starhalf" name="5rating" value="half" /><label class="half" for="5starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$1499</span> 
+					<span class="old__price"></span>
+				</span>
+			</div>
+			<div class="description">Мурчит как трактор, часто запрывает на колени, чтобы погреться. </div>		
+		</div>
+<!--КОТ 6 -->
+
+
+		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/6.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Пушистик</a>
+				<span class="cat__category">Кот цвета шпрот</span>
+				<div class="rating">
+	            	<input type="radio" id="6star5" name="6rating" value="5" /><label class = "full" for="6star5" title="5 stars"></label>
+	            	<input type="radio" id="6star4half" name="6rating" value="4 and a half" /><label class="half" for="6star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="6star4" name="6rating" value="4" /><label class = "full" for="6star4" title="4 stars"></label>
+	            	<input type="radio" id="6star3half" name="6rating" value="3 and a half" /><label class="half" for="6star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="6star3" name="6rating" value="3" /><label class = "full" for="6star3" title="3 stars"></label>
+	            	<input type="radio" id="6star2half" name="6rating" value="2 and a half" /><label class="half" for="6star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="6star2" name="6rating" value="2" /><label class = "full" for="6star2" title="2 stars"></label>
+	            	<input type="radio" id="6star1half" name="6rating" value="1 and a half" /><label class="half" for="6star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="6star1" name="6rating" value="1" /><label class = "full" for="6star1" title="1 star"></label>
+	            	<input type="radio" id="6starhalf" name="6rating" value="half" /><label class="half" for="6starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$0</span> 
+					<span class="old__price">$10</span>
+				</span>
+			</div>
+			<div class="description">Характер НЕ соответствует внешности. Заберите его пожалуйста.</div>		
+		</div>
+<!--КОТ 7 -->		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/7.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Кот Шредингера</a>
+				<span class="cat__category">суперпозитивен</span>
+				<div class="rating">
+	            	<input type="radio" id="7star5" name="7rating" value="5" /><label class = "full" for="7star5" title="5 stars"></label>
+	            	<input type="radio" id="7star4half" name="7rating" value="4 and a half" /><label class="half" for="7star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="7star4" name="7rating" value="4" /><label class = "full" for="7star4" title="4 stars"></label>
+	            	<input type="radio" id="7star3half" name="7rating" value="3 and a half" /><label class="half" for="7star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="7star3" name="7rating" value="3" /><label class = "full" for="7star3" title="3 stars"></label>
+	            	<input type="radio" id="7star2half" name="7rating" value="2 and a half" /><label class="half" for="7star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="7star2" name="7rating" value="2" /><label class = "full" for="7star2" title="2 stars"></label>
+	            	<input type="radio" id="7star1half" name="7rating" value="1 and a half" /><label class="half" for="7star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="7star1" name="7rating" value="1" /><label class = "full" for="7star1" title="1 star"></label>
+	            	<input type="radio" id="7starhalf" name="7rating" value="half" /><label class="half" for="7starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$1000</span> 
+					<span class="old__price">$2000</span>
+				</span>
+			</div>
+			<div class="description">Кот хорош, и это единственное, что о нем можно сказать определенно. Возможна доставка в оригинальной коробке.</div>		
+		</div>
+<!--КОТ 8 -->		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" href = "www.google.com" src="photo_cats/8.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Курумо</a>
+				<span class="cat__category">Мудрый кот</span>
+				<div class="rating">
+	            	<input type="radio" id="8star5" name="8rating" value="5" /><label class = "full" for="8star5" title="5 stars"></label>
+	            	<input type="radio" id="8star4half" name="8rating" value="4 and a half" /><label class="half" for="8star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="8star4" name="8rating" value="4" /><label class = "full" for="8star4" title="4 stars"></label>
+	            	<input type="radio" id="8star3half" name="8rating" value="3 and a half" /><label class="half" for="8star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="8star3" name="8rating" value="3" /><label class = "full" for="8star3" title="3 stars"></label>
+	            	<input type="radio" id="8star2half" name="8rating" value="2 and a half" /><label class="half" for="8star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="8star2" name="8rating" value="2" /><label class = "full" for="8star2" title="2 stars"></label>
+	            	<input type="radio" id="8star1half" name="8rating" value="1 and a half" /><label class="half" for="8star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="8star1" name="8rating" value="1" /><label class = "full" for="8star1" title="1 star"></label>
+	            	<input type="radio" id="8starhalf" name="8rating" value="half" /><label class="half" for="8starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$1499</span> 
+					<span class="old__price"></span>
+				</span>
+			</div>
+			<div class="description">Недавно подрался с серым котом, после этого наказан.</div>		
+		</div>
+<!--КОТ 9 -->		
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" src="photo_cats/9.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Кот-да-Винчи</a>
+				<span class="cat__category">Витрувианский кот</span>
+				<div class="rating">
+	            	<input type="radio" id="9star5" name="9rating" value="5" /><label class = "full" for="9star5" title="5 stars"></label>
+	            	<input type="radio" id="9star4half" name="9rating" value="4 and a half" /><label class="half" for="9star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="9star4" name="9rating" value="4" /><label class = "full" for="9star4" title="4 stars"></label>
+	            	<input type="radio" id="9star3half" name="9rating" value="3 and a half" /><label class="half" for="9star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="9star3" name="9rating" value="3" /><label class = "full" for="9star3" title="3 stars"></label>
+	            	<input type="radio" id="9star2half" name="9rating" value="2 and a half" /><label class="half" for="9star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="9star2" name="9rating" value="2" /><label class = "full" for="9star2" title="2 stars"></label>
+	            	<input type="radio" id="9star1half" name="9rating" value="1 and a half" /><label class="half" for="9star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="9star1" name="9rating" value="1" /><label class = "full" for="9star1" title="1 star"></label>
+	            	<input type="radio" id="9starhalf" name="9rating" value="half" /><label class="half" for="9starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$2499</span> 
+					<span class="old__price">$3000</span>
+				</span>
+			</div>
+			<div class="description">Славен тем, что позировал Леонардо да Винчи </div>		
+		</div>
+<!--КОТ 10 -->			
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat"  src="photo_cats/10.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Жора</a>
+				<span class="cat__category">У-Уныние</span>
+				<div class="rating">
+	            	<input type="radio" id="10star5" name="10rating" value="5" /><label class = "full" for="10star5" title="5 stars"></label>
+	            	<input type="radio" id="10star4half" name="10rating" value="4 and a half" /><label class="half" for="10star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="10star4" name="10rating" value="4" /><label class = "full" for="10star4" title="4 stars"></label>
+	            	<input type="radio" id="10star3half" name="10rating" value="3 and a half" /><label class="half" for="10star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="10star3" name="10rating" value="3" /><label class = "full" for="10star3" title="3 stars"></label>
+	            	<input type="radio" id="10star2half" name="10rating" value="2 and a half" /><label class="half" for="10star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="10star2" name="10rating" value="2" /><label class = "full" for="10star2" title="2 stars"></label>
+	            	<input type="radio" id="10star1half" name="10rating" value="1 and a half" /><label class="half" for="10star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="10star1" name="10rating" value="1" /><label class = "full" for="10star1" title="1 star"></label>
+	            	<input type="radio" id="10starhalf" name="10rating" value="half" /><label class="half" for="10starhalf" title="0.5 stars"></label>
+	        	</div>
+
+				<span class="price">
+					<span class="today__price">$1499</span> 
+					<span class="old__price">$2000</span>
+				</span>
+			</div>
+			<div class="description">Фотографировал утром в понедельник, поэтому и эмоции на мордочке соответствующие. А на самом деле, он весел и полон жизненной энергии.</div>		
+		</div>
+		<div class="cat__card">
+			<div class="photo__card">
+				<img class = "photo__cat" href = "www.google.com" src="photo_cats/11.jpg">
+			</div>
+			<div class="name_and_price">
+				<a class="name" href="#">Бегемот</a>
+				<span class="cat__category">толстый тепленький живот</span>
+				<div class="rating">
+	            	<input type="radio" id="11star5" name="11rating" value="5" /><label class = "full" for="11star5" title="5 stars"></label>
+	            	<input type="radio" id="11star4half" name="11rating" value="4 and a half" /><label class="half" for="11star4half" title="4.5 stars"></label>
+	            	<input type="radio" id="11star4" name="11rating" value="4" /><label class = "full" for="11star4" title="4 stars"></label>
+	            	<input type="radio" id="11star3half" name="11rating" value="3 and a half" /><label class="half" for="11star3half" title="3.5 stars"></label>
+	            	<input type="radio" id="11star3" name="11rating" value="3" /><label class = "full" for="11star3" title="3 stars"></label>
+	            	<input type="radio" id="11star2half" name="11rating" value="2 and a half" /><label class="half" for="11star2half" title="2.5 stars"></label>
+	            	<input type="radio" id="11star2" name="11rating" value="2" /><label class = "full" for="11star2" title="2 stars"></label>
+	            	<input type="radio" id="11star1half" name="11rating" value="1 and a half" /><label class="half" for="11star1half" title="1.5 stars"></label>
+	            	<input type="radio" id="11star1" name="11rating" value="1" /><label class = "full" for="11star1" title="1 star"></label>
+	            	<input type="radio" id="11starhalf" name="11rating" value="half" /><label class="half" for="11starhalf" title="0.5 stars"></label>
+	        	</div>
+				<span class="price">
+					<span class="today__price">$666</span> 
+					<span class="old__price"></span>
+				</span>
+			</div>
+			<div class="description">Он вернулся чтобы таки дочинить примус! Имеет привычку угощать прекрасных дам чистым спиртом. Сам же предпоситает молоко.</div>		
+		</div>
+																						
+	</article>
+	
+
+</body>
+</html>

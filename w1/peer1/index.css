@@ -1,0 +1,162 @@
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700');
+
+h2{
+	text-align: center;
+}
+
+img{
+	background: white;
+	
+	width: 100%;
+	padding: 0px;
+
+}
+.cat__card {
+
+	width: 255px; 
+	padding: 5px ;
+	margin: 5px 5px 5px auto;
+	display: inline-block;
+	
+	vertical-align: top;
+}	
+#chetyre:checked ~ .cat__card {
+	display: block;
+	width: 70%;
+	
+	overflow: auto;
+	float: left;
+}
+.photo__card{
+
+	display: table-cell;
+	height: 300px;
+	width: 250px;
+	vertical-align: middle;
+
+	
+}
+#chetyre:checked ~ div div.photo__card {
+	height:auto;
+	float: left;
+	margin-right: 20px;
+}
+
+.photo__cat{	
+	
+	background-color: white;	
+	text-align: center;
+	margin-bottom: 0px;
+	
+
+}
+
+
+
+.name_and_price{
+	
+	width: 250px;
+	height: 130px;
+
+	float: left;
+
+}
+
+.name{
+	display: block;
+	text-align: left;
+	font-size:1.2em;
+	height: 20px;
+	padding: 1px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.name:hover{
+	color: red;
+}
+.cat__card:hover {
+	opacity: 0.7;
+	
+}
+
+
+.cat__category{
+	display: block;
+	text-align: left;
+	font-family: 'Racing Sans One', cursive;
+}
+.cat__category:hover{
+	color: red;
+}
+
+.price{
+	display: block;
+	text-align: left;
+	font-weight: bold;
+}
+
+.today__price{
+	color: red;
+	font-size:1.5em;
+	
+}
+
+.old__price{
+	text-decoration: line-through;
+}
+.description{
+	font-family: 'Farsan', cursive;
+	display: inline-block;
+	max-width: 250px;
+	max-height: 250px;
+	text-align: justify;
+
+	margin:0 auto;
+}
+
+#chetyre:checked ~ div div.description{
+	
+	float: right;
+	max-width: 350px;
+}
+.rating {
+	display: inline-block;
+    border: none;
+    text-align: center;
+    margin:auto;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+	color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { 
+	color: #FFED85;  }
