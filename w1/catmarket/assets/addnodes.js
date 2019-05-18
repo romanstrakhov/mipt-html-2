@@ -109,9 +109,21 @@ for (i = 0; i < 10; i++) {
     instance.querySelector('.item__description').innerHTML = items[i]['description']; 
     
     let rating = Math.round(2 * Number(items[i]['rating']));
-    let ratingdiv = instance.querySelector('.item__rating__mark');
-    ratingdiv.classList.add('item__rating__' + String(rating));
+    let ratingdiv = instance.querySelector('.item__rating');
+    let ratinglabels = ratingdiv.querySelectorAll('label');
+    let ratinginputs = ratingdiv.querySelectorAll('input');
 
+    ratinglabels.forEach((e)=>{
+      e.setAttribute('for',  e.getAttribute('for').replace('num', i+1));
+    });
+
+    ratinginputs.forEach((e)=>{
+      e.id = e.id.replace('num', i+1);
+      e.setAttribute('name',  e.getAttribute('name').replace('num', i+1));
+      if (Number(items[i]['rating']) === Number(e.getAttribute('value'))) {
+        e.setAttribute('checked','');
+      }
+    });
   }
   
   container.insertBefore(instance, point);
