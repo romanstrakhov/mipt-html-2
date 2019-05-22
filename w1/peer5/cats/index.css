@@ -1,0 +1,157 @@
+/* index.css */
+
+body {
+/*	width: 1600px;*/
+    margin: 0 auto;
+}
+
+.base {	
+	width: auto;
+	margin: 5px;
+/*	background: #5af;	*/
+}
+
+.base:hover div {
+	opacity: .8;
+}
+
+
+input:checked ~ .base,
+.view:checked ~ .base {
+	display: inline-block;
+	width: 400px;
+	vertical-align: top;
+}
+
+input:checked ~ .base > div,
+.view:checked ~ .base > div {
+	display: block;
+}
+
+
+.block-photo {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 400px;
+	margin: 5px 5px 0px;
+	min-height: 300px;
+/*	background: #f5a;*/
+}
+
+.block-name {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 400px;
+	height: 120px;
+/*	background: #aaa;*/
+}
+
+.block-desc {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	min-height: 100px;
+	max-width: 600px;	
+/*	background: #af5;*/
+}
+
+.block-photo img {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}	
+
+
+.name-category {
+	display: block;
+}
+
+.name {
+	display: block;	
+	padding: 10px;
+	width: 380px;
+	white-space: nowrap;	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #152;
+	font: bold 24px Helvetica, sans-serif;
+/*	background: #5aa;*/
+}
+
+.category {
+	display: block;	
+	padding: 0 10px 10px;
+	font: italic 14px Helvetica, sans-serif;
+/*	background: #55a;*/
+}
+
+.name-category:hover > div {
+	background: #f66;
+}
+
+.price {	
+	display: block;	
+	margin: 5px 30px;
+/*	background: #aa5;*/
+	color: #722; 
+	font: italic bold 30px Georgia, serif;
+	float: right; 
+}
+
+.block-rating {	
+	display: block;	
+/*	background: #8a5;	*/
+}
+
+.rating { 
+  	border: none;  	
+  	padding: 5px;
+/*	background: #4a5;	*/
+	float: left;
+}	
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+  float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+/*
+input:hover,
+input:hover ~ input {
+	outline: 3px solid #0ff;
+}
+
+input:checked,
+input:checked ~ input {
+	outline: 3px solid #ff6698;
+	background: blue;
+}*/
