@@ -1,0 +1,18 @@
+.disclaimer {
+  border: 1px solid green;
+  padding: 10px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 25px;
+  right: 25px; 
+  background-color: white;
+}
+
+.disclaimer button {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  border: 0;
+  background-color: green;
+  color: white;
+}
