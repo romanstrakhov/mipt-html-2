@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+main {
+    margin: 50px auto auto auto;
+    background-color: #eeeeee;
+    width: 80%;
+    border: 1px solid red;
+    /* padding: 20px; */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+}
+
+
+input[name="pages"]:nth-of-type(2):checked ~ div.gallery {
+    transform: translateX(-75%);
+}
+input[name="pages"]:nth-of-type(3):checked ~ div.gallery {
+    transform: translateX(-150%);
+}
+
+div.gallery {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    transform: translateX(0);
+    transition-duration: 1s;
+    vertical-align: bottom;
+    font-size: 0;
+}
+
+article.gallery__product {
+    display: inline-block;
+    width: 25%;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    padding: 10px;
+    /* margin-left: -20px; */
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+img.gallery__product__image {
+    width: 100%;
+    /* height: 100%; */
+}
+
+/*
+article.gallery__product:first-child {
+    margin-left: 0;
+}
+
+*/
+
+img.gallery__product__image:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+} 
+
+img.gallery__product__image:hover ~ div.gallery__product__description {
+    display: block;
+}
+
+div.gallery__product__description:hover {
+    display: block;
+    z-index: 100;
+}
+
+div.gallery__product__description {
+    text-align: left;
+    font-size: 12px;
+    background-color: white;
+    position:relative;
+    font-size: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: none; */
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+    white-space: normal;
+    z-index: 0;
+    
+    /* left: -20px;
+    top: -175px;     */
+    transform: translate(-20px);
+    /* margin-bottom:-175px; */
+}
+
+img.gallery__product__description__image {
+    width: 100%;
+}
+
+
+/* Pop-up images */
+
+/*
+div.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+div.popup.hidden {
+    display: none;
+}
+
+div.popup__image img {
+    max-width: 90%;
+    max-height: 90%;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.popup__close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+    font-size: 64px;
+    cursor: pointer;
+    color: white;
+}
+
+div.popup__background {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+}
+*/
