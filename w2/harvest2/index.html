@@ -13,10 +13,9 @@
         <input type="radio" name="pages" id="p2">
         <input type="radio" name="pages" id="p3">
         <div class="gallery">
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/01.jpg" alt="" onclick="runPopup('images/01.jpg')"/>
+            <a href="#p01"><article class="gallery__product">                
                 <div class="gallery__product__description">
-                    <img class="gallery__product__description__image" src="images/01.jpg" alt="" onclick="runPopup('images/01.jpg')"/>
+                    <img class="gallery__product__description__image" src="images/01.jpg" alt=""/>
                     <p>
                         Капуста принадлежит к числу важнейших овощных растений.
                         Она введена в культуру, по-видимому, в доисторические времена.
@@ -35,9 +34,8 @@
                         культурой и на Руси.
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/02.jpg" alt=""/>
+            </article></a>
+            <a href="#p02"><article class="gallery__product">                
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/02.jpg" alt=""/>
                     <p>
@@ -55,9 +53,8 @@
                         продукта, который всегда есть на кухне даже у самых бедных.
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/03.jpg" alt=""/>
+            </article></a>
+            <a href="#p03"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/03.jpg" alt=""/>
                     <p>
@@ -67,9 +64,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/04.jpg" alt=""/>
+            </article></a>
+            <a href="#p04"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/04.jpg" alt=""/>
                     <p>
@@ -79,9 +75,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/05.jpg" alt=""/>
+            </article></a>
+            <a href="#p05"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/05.jpg" alt=""/>
                     <p>
@@ -91,9 +86,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/06.jpg" alt=""/>
+            </article></a>
+            <a href="#p06"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/06.jpg" alt=""/>
                     <p>
@@ -103,9 +97,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/07.jpg" alt=""/>
+            </article></a>
+            <a href="#p07"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/07.jpg" alt=""/>
                     <p>
@@ -115,9 +108,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/08.jpg" alt=""/>
+            </article></a>
+            <a href="#p08"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/08.jpg" alt=""/>
                     <p>
@@ -127,9 +119,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/09.jpg" alt=""/>
+            </article></a>
+            <a href="#p09"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/09.jpg" alt=""/>
                     <p>
@@ -139,9 +130,8 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
-            <article class="gallery__product">
-                <img class="gallery__product__image" src="images/10.jpg" alt=""/>
+            </article></a>
+            <a href="#p10"><article class="gallery__product">
                 <div class="gallery__product__description">
                     <img class="gallery__product__description__image" src="images/10.jpg" alt=""/>
                     <p>
@@ -151,16 +141,23 @@
                         Nostrum quis facere, doloribus ex culpa magnam non placeat nisi?
                     </p>
                 </div>
-            </article>
+            </article></a>
         </div>
     </main>
-    <!-- <div class="popup hidden">
-        <div class="popup__image">
-            <img src="images/01.jpg" alt=""/>
+    <div class="popup">
+        <div class="popup__image" id="p01"><a href="#"><img src="images/01.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p02"><a href="#"><img src="images/02.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p03"><a href="#"><img src="images/03.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p04"><a href="#"><img src="images/04.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p05"><a href="#"><img src="images/05.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p06"><a href="#"><img src="images/06.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p07"><a href="#"><img src="images/07.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p08"><a href="#"><img src="images/08.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p09"><a href="#"><img src="images/09.jpg" alt=""/></a></div>
+        <div class="popup__image" id="p10"><a href="#"><img src="images/10.jpg" alt=""/></a></div>
+        <div class="popup__background">
+            <a href="#" class="popup__close"></a>
         </div>
-        <div class="popup__close" onclick="closePopup();">&#10005;</div>
-        <div class="popup__background"></div>
     </div>
-    <script src="gallery.js"></script> -->
 </body>
 </html>
