@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Бабуленькины котятки</title>
+</head>
+<body>
+
+  <header>
+    <h1>Бабуленькины котятки</h1>
+  </header>
+  
+  <section class="showcase">
+
+    <input class="filter__breed" type="checkbox" id="filter__breed-ab">
+    <input class="filter__breed" type="checkbox" id="filter__breed-br">
+    <input class="filter__breed" type="checkbox" id="filter__breed-rg">
+    <input class="filter__breed" type="checkbox" id="filter__breed-si">
+
+    <nav>
+      <ul class="breed">
+        <label for="filter__breed-ab"><li class="nav__filter__breed-ab">Абиссинская</li></label>
+        <label for="filter__breed-br"><li class="nav__filter__breed-br">Британская</li></label>
+        <label for="filter__breed-rg"><li class="nav__filter__breed-rg">Русская голубая</li></label>
+        <label for="filter__breed-si"><li class="nav__filter__breed-si">Сиамская</li></label>
+      </ul>
+    </nav>
+    
+    <main>
+      <ul class="items">
+        <li class="cat breed-br"><img src="img/br-01.jpg" alt=""><div class="items__desc">Гоша, 2 года</div></li>
+        <li class="cat breed-si"><img src="img/si-01.jpg" alt=""><div class="items__desc">Патрисия, 2 года</div></li>
+        <li class="cat breed-rg"><img src="img/rg-01.jpg" alt=""><div class="items__desc">Джессика, 3 года</div></li>
+        <li class="cat breed-ab"><img src="img/ab-01.jpg" alt=""><div class="items__desc">Отелло, 2 года</div></li>
+        <li class="cat breed-br"><img src="img/br-02.jpg" alt=""><div class="items__desc">Томас, 4 года</div></li>
+        <li class="cat breed-si"><img src="img/si-02.jpg" alt=""><div class="items__desc">Сарбона, 4 года</div></li>
+        <li class="cat breed-rg"><img src="img/rg-02.jpg" alt=""><div class="items__desc">Надир, 3 года</div></li>
+        <li class="cat breed-ab"><img src="img/ab-02.jpg" alt=""><div class="items__desc">Милли, 4 месяца</div></li>
+        <li class="cat breed-br"><img src="img/br-03.jpg" alt=""><div class="items__desc">Хильда, 6 лет</div></li>
+        <li class="cat breed-si"><img src="img/si-03.jpg" alt=""><div class="items__desc">София, 3 года</div></li>
+        <li class="cat breed-rg"><img src="img/rg-03.jpg" alt=""><div class="items__desc">Ягуар, 4 года</div></li>
+        <li class="cat breed-ab"><img src="img/ab-03.jpg" alt=""><div class="items__desc">Влас, 3 месяца</div></li>
+        <li class="cat breed-br"><img src="img/br-04.jpg" alt=""><div class="items__desc">Пушинка, 3 года</div></li>
+        <li class="cat breed-si"><img src="img/si-04.jpg" alt=""><div class="items__desc">Ява, 3 года</div></li>
+        <li class="cat breed-rg"><img src="img/rg-04.jpg" alt=""><div class="items__desc">Роксана, 2 года</div></li>
+        <li class="cat breed-ab"><img src="img/ab-04.jpg" alt=""><div class="items__desc">Бишка, 2 года</div></li>
+        <li class="cat breed-br"><img src="img/br-05.jpg" alt=""><div class="items__desc">Бушуй, 5 месяцев</div></li>
+        <li class="cat breed-si"><img src="img/si-05.jpg" alt=""><div class="items__desc">Шумахер, 3 года</div></li>
+        <li class="cat breed-rg"><img src="img/rg-05.jpg" alt=""><div class="items__desc">Микки, 7 лет</div></li>
+        <li class="cat breed-ab"><img src="img/ab-05.jpg" alt=""><div class="items__desc">Бусинка, 3 года</div></li>
+      </ul>
+    </main>
+    
+    <aside>
+      <h2>Рейтинг</h2>
+      <label for="rating__reverse" class="rating__direction">по убыванию</label><input type="checkbox" id="rating__reverse"/>
+      <ul class="rating">
+        <li class="rating__9">
+          <div class="rating__item-name">Абиссинская</div>
+          <div class="rating__item-bar"></div>
+          <div class="rating__item-value">9</div>
+        </li>
+        <li class="rating__8">
+          <div class="rating__item-name">Британская</div>
+          <div class="rating__item-bar"></div>
+          <div class="rating__item-value">8</div>
+        </li>
+        <li class="rating__10">
+          <div class="rating__item-name">Русская голубая</div>
+          <div class="rating__item-bar"></div>
+          <div class="rating__item-value">10</div>
+        </li>
+        <li class="rating__4">
+          <div class="rating__item-name">Сиамская</div>
+          <div class="rating__item-bar"></div>
+          <div class="rating__item-value">4</div>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+  <footer>
+    <div class="footer__copyright">&copy; ООО «Бабуленькины котятки», 2015</div>
+    <div class="footer__address">Наш адрес: <address>улица Котовая, д.&nbsp;5</address></div>
+  </footer>
+
+</body>
+</html>
